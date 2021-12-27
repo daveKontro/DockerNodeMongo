@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Mongo App</title>
+</head>
+
+<body>
+  <h1>To Do</h1>
+  <form method="post" action="/task/add" autocomplete="off">
+    <label for="name">new task</label>
+    <input type="text" name="name">
+    <input type="submit" value="Add">
+  </form>
+  <h4>tasks:</h4>
+  <ul>
+    <% tasks.map(task => { %>
+      <li>
+        <%= task.name %>
+      </li>
+      <% }); %>
+  </ul>
+</body>
+
+</html>

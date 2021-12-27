@@ -1,5 +1,7 @@
 .vscode/**/*
 nodemon.json
+*.out
+*.http
 
 # Logs
 logs
